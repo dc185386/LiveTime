@@ -51,49 +51,48 @@ class MainActivity : ComponentActivity() {
 }
 
 
+//@RequiresApi(Build.VERSION_CODES.O)
+////@Preview(showBackground = true)
+//@Composable
+//fun Test() {
+//    var dateTimeString = "2021-10-05T10:00:30.0000000"
+//    var dateTimeString1 = "2024-03-11T14:41:33.672845+05:30"
+//    var date = LocalDate.parse(dateTimeString1, DateTimeFormatter.ISO_DATE_TIME)
+//    var time = LocalTime.parse(dateTimeString1, DateTimeFormatter.ISO_DATE_TIME)
+//    Column {
+//        Text(text = date.toString())
+//        Spacer(modifier = Modifier.padding(10.dp))
+//        Text(text = time.toString())
+//        Spacer(modifier = Modifier.padding(10.dp))
+//        Text(text = LocalDate.now().toString())
+//        Spacer(modifier = Modifier.padding(10.dp))
+//        Text(text = LocalTime.now().toString())
+//        Spacer(modifier = Modifier.padding(10.dp))
+////        var date2 = LocalDate.now()
+////        var time2 = LocalTime.now()
+////        val date11 = LocalDateTime.of(2023, 3, 8, 12, 0, 0)
+//        val date1 = LocalDateTime.of(date.year,date.month,date.dayOfMonth,time.hour,time.minute,time.second)
+//        val epochTime = date1.toEpochSecond(ZoneOffset.UTC)
+////        val date11 = LocalDateTime.of(date2.year,date2.month,date2.dayOfMonth,time2.hour,time2.minute,time2.second)
+////        val epochTime2 = date2.toEpochSecond(ZoneOffset.UTC)
+//        Text(text = epochTime.toString())
+//        Spacer(modifier = Modifier.padding(10.dp))
+//
+//        val epochTimeInMillis: Long = epochTime // Epoch time in milliseconds
+//        val minutes = epochTimeInMillis / 1000 / 60
+//        val seconds = (epochTimeInMillis / 1000) % 60
+//        Text(text = "$minutes minutes")
+//        Spacer(modifier = Modifier.padding(10.dp))
+//        Text(text = "$seconds seconds")
+//        Spacer(modifier = Modifier.padding(10.dp))
+//    }
+//}
+
+
 @RequiresApi(Build.VERSION_CODES.O)
-//@Preview(showBackground = true)
-@Composable
-fun Test() {
-    var dateTimeString = "2021-10-05T10:00:30.0000000"
-    var dateTimeString1 = "2024-02-29T11:21:33.672845+05:30"
-    var date = LocalDate.parse(dateTimeString1, DateTimeFormatter.ISO_DATE_TIME)
-    var time = LocalTime.parse(dateTimeString1, DateTimeFormatter.ISO_DATE_TIME)
-    Column {
-        Text(text = date.toString())
-        Spacer(modifier = Modifier.padding(10.dp))
-        Text(text = time.toString())
-        Spacer(modifier = Modifier.padding(10.dp))
-        Text(text = LocalDate.now().toString())
-        Spacer(modifier = Modifier.padding(10.dp))
-        Text(text = LocalTime.now().toString())
-        Spacer(modifier = Modifier.padding(10.dp))
-//        var date2 = LocalDate.now()
-//        var time2 = LocalTime.now()
-//        val date11 = LocalDateTime.of(2023, 3, 8, 12, 0, 0)
-        val date1 = LocalDateTime.of(date.year,date.month,date.dayOfMonth,time.hour,time.minute,time.second)
-        val epochTime = date1.toEpochSecond(ZoneOffset.UTC)
-//        val date11 = LocalDateTime.of(date2.year,date2.month,date2.dayOfMonth,time2.hour,time2.minute,time2.second)
-//        val epochTime2 = date2.toEpochSecond(ZoneOffset.UTC)
-        Text(text = epochTime.toString())
-        Spacer(modifier = Modifier.padding(10.dp))
-
-        val epochTimeInMillis: Long = epochTime // Epoch time in milliseconds
-        val minutes = epochTimeInMillis / 1000 / 60
-        val seconds = (epochTimeInMillis / 1000) % 60
-        Text(text = "$minutes minutes")
-        Spacer(modifier = Modifier.padding(10.dp))
-        Text(text = "$seconds seconds")
-        Spacer(modifier = Modifier.padding(10.dp))
-    }
-}
-
-
-@RequiresApi(Build.VERSION_CODES.O)
-@Preview(showBackground = true)
 @Composable
 fun Test1() {
-    val dateTimeString = "2024-03-08T22:39:33.672845+05:30"
+    val dateTimeString = "2024-03-12T21:01:33.672845+05:30"  // (YYYY-MM-DD)T(HH:MM:SS)+5:30
     val date = LocalDate.parse(dateTimeString, DateTimeFormatter.ISO_DATE_TIME)
     val time = LocalTime.parse(dateTimeString, DateTimeFormatter.ISO_DATE_TIME)
 
